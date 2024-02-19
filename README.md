@@ -3,6 +3,8 @@
 ## Degree Program: <br>***BS Computer Science***
 ## Section: <br>***CMSC 100 U1L***
 #
+## Live Website Link: <br> https://vivekjeet.github.io/chambal-u1l-exercise02
+#
 ## General steps in creating the page:
 1. List down the contents to add to the page.
 2. Conceptualize the design and layout for these contents.
