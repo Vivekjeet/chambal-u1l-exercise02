@@ -1,0 +1,310 @@
+@font-face {
+    font-family: Jost;
+    src: url('fonts/Jost-Regular.ttf');
+}
+
+@font-face {
+    font-family: Jost-Medium;
+    src: url('fonts/Jost-Medium.ttf');
+}
+
+@font-face {
+    font-family: Jost-Black;
+    src: url('fonts/Jost-Black.ttf');
+}
+
+body {
+    background-color: #000000;
+    font-family: Jost-Medium, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #000000;
+    color: #e2090d;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 30px
+  }
+
+.logo-img{
+    padding: 10px 10px;
+    padding-top: 15px;
+    width:80px;
+    height: 80px;
+  }
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #000000;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display:flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 160px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    font-size: 20px;
+  }
+  
+  li a:hover {
+    color:#e2090d;
+    background-color: #000000;
+  }
+
+  .left-dist{
+    margin-left: 50px;
+  }
+
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: #555; /* Lighter gray */
+    color: #e2090d;
+    text-align: center;
+    padding: 10px;
+}
+
+.gray-bg{
+    background-color: #111111;
+}
+
+.featured-photo-title{
+    font-family: Jost-Black;
+    font-size: 100px;
+    color: #e2090d;
+    margin: 0;
+}
+
+.featured-photo-text {
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+}
+
+.featured-photo-img {
+    display: inline;
+    width: 50%;
+}
+
+.featured-photo-img img {
+    max-width: 100%;
+    height: auto;
+}
+
+.ds-button {
+    align-items: center;
+    background-color: #000000;
+    border: 2px solid #e2090d;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: flex;
+    font-family: Jost-Medium,sans-serif;
+    font-size: 22px;
+    height: 48px;
+    justify-content: center;
+    line-height: 24px;
+    max-width: 100%;
+    padding: 0 25px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .ds-button:after {
+    background-color: #e2090d;
+    border-radius: 8px;
+    content: "";
+    display: block;
+    height: 48px;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    top: -2px;
+    transform: translate(8px, 8px);
+    transition: transform .2s ease-out;
+    z-index: -1;
+  }
+  
+  .ds-button:hover:after {
+    transform: translate(0, 0);
+  }
+  
+  .ds-button:active {
+    color:#e2090d;
+    background-color: #000000;
+    outline: 0;
+  }
+  
+  .ds-button:hover {
+    outline: 0;
+  }
+
+  .personal-projects, .skills-title, .abt-me-title{
+    text-align: center;
+    color: #FFFFFF;
+    font-family: Jost-Black;
+    font-size: 48px;
+    margin-top: 100px;
+  }
+
+  .proj-line{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .p-block1, .p-block2, .p-block3{
+      color:#FFFFFF;
+      margin: 20px;
+      margin-left: 30px;
+      margin-right: 30px;
+      padding: 40px;
+      padding-top: 0;
+      background-color: #191919;
+      width: 33.3333333333%;
+      height: 550px;
+  }
+
+  .p1-title, .p2-title, .p3-title{
+    padding-bottom: 10px;
+    padding-top: 30px;
+    margin: 0px;
+    font-family: "Jost-Medium", sans-serif;
+    font-style: bold;
+    font-size: 30px;
+    color: #FFFFFF;
+  }
+
+  .p1-desc, .p2-desc, .p3-desc{
+    padding: 10px;
+    padding-bottom: 30px;
+    margin: 0px;
+    font-family: "Jost";
+    font-style: bold;
+    font-size: 18px;
+    color: #999999;
+  }
+
+  .p1-desc, .p3-desc{
+    padding-bottom: 55px;
+  }
+
+  .pimg1, .pimg2, .pimg3{
+    width: 350px;
+    height: 350px;
+  }
+
+  #projects{
+    margin-bottom: 70px;
+  }
+
+  .skills-container{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+  }
+
+  .skills-title{
+    padding-left: 0;
+    margin-left: 0;
+    margin-top: 50px;
+    margin-bottom: 80px;
+    width: 100%;
+    font-size: 50px;
+  }
+
+  .python-block, .r-block, .sql-block, .java-block, .c-block{
+    width: 20%;
+  }
+
+  .python-pic, .r-pic, .sql-pic, .java-pic, .c-pic{
+    width: 80px;
+  }
+
+  .skill-desc{
+    color: #FFFFFF ;
+    font-size: 22px;
+  }
+
+  .about-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 100px;
+  }
+
+  .self-pic{
+    width: 500px;
+    height: 500px;
+    padding-top: 30px;
+  }
+
+  .abt-me-desc{
+    color: #FFFFFF;
+    text-align: left;
+    width: 600px;
+    font-size: 14px;
+  }
+
+  footer{
+    background-color: #191919;
+  }
+
+  .footer-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .contact{
+    text-align: center;
+    font-family: "Jost-Black";
+    font-size: 44px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .footer-details{
+    text-align: center;
+  }
+
+  .logo-img2{
+    padding: 10px 10px;
+    padding-top: 15px;
+    width:210px;
+    height: 210px;
+  }
+
+  #copyright{
+    padding-top: 20px;
+  }
